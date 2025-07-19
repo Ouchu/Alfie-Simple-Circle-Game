@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3489418943335991"
+     crossorigin="anonymous"></script>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6MQYP30JZ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKN4HRQ60R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-H6MQYP30JZ');
+  gtag('config', 'G-CKN4HRQ60R');
 </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Circle Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Alfie's Simple Game</title>
+    <link rel="manifest" href="/static/manifest.json"> <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Hide scrollbars if canvas is larger than screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            background-color: #222; /* Dark background */
+            color: #eee; /* Light text color */
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+        canvas {
+            border: 2px solid #555;
+            background-color: #000;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #0f0; /* Green title */
+        }
+    </style>
 </head>
 <body>
-    <div class="game-container">
-        <h1>Simple Circle Game</h1>
-        <div id="gameInfo">
-            <p>Score: <span id="score">0</span></p>
-            <p>Level: <span id="level">1</span></p>
-        </div>
-        <canvas id="gameCanvas"></canvas>
-        <button id="startButton">Start Game</button>
-    </div>
-
-    <script src="game.js"></script>
+    <h1>Simple Circle Game</h1>
+    <canvas id="gameCanvas" width="360" height="640"></canvas>
+    <script src="/static/game.js"></script>
 </body>
-</html>
+</html
